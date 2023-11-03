@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas1/formulir_screen.dart';
+import 'package:tugas1/page.dart';
 
 
 class HomeScren extends StatefulWidget {
@@ -30,7 +30,7 @@ class _HomeScrenState extends State<HomeScren> {
                 Navigator.pushNamed(context, '/formulir');
               },
               child: const Text (
-                "Elevated Button")),
+                "Back")),
           const SizedBox(height: 10,),
           const ElevatedButton(
               onPressed: null,
@@ -40,17 +40,18 @@ class _HomeScrenState extends State<HomeScren> {
           OutlinedButton(
             style: OutlinedButton.styleFrom(
               side: const BorderSide(
-                color: Colors.amber
+                color: Colors.greenAccent
               )
-            ),
+            ), 
               onPressed: (){
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const FormulirScreen()));
+                  //MaterialPageRoute(builder: (context) => const FormulirScreen()));
+                  MaterialPageRoute(builder: (context) => profil()));
               },
               child: const Text(
-                "Submit",
+                "Next",
                 style: TextStyle(
-                    color: Colors.amber),
+                    color: Colors.green),
               )
             ),
           ],

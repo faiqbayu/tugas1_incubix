@@ -112,9 +112,8 @@ class _FormulirScreenState extends State<FormulirScreen> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScren()));
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text('sukses'),
+                    content: const Text('sukses'),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                    width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height / 4,
                   ),
                 );
                 }
